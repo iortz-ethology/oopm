@@ -1,0 +1,5 @@
+name: MBTA Routes List
+type: module
+description: "Display MBTA Routes List and schedule information"
+core: 8.x
+package: Custom

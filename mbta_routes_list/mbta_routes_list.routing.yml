@@ -1,0 +1,15 @@
+mbta_routes_list.get_routes:
+  path: '/mbta_routes_list'
+  defaults:
+    _controller: '\Drupal\mbta_routes_list\Controller\MBTAController::mainPage'
+    _title: 'Routes List Page'
+  requirements:
+    _permission: 'access content'
+mbta_routes_list.get_route_info:
+  path: '/routes/{id}'
+  defaults:
+    _controller: '\Drupal\mbta_routes_list\Controller\MBTAController::routeInfoPage'
+    _title: 'Routes Info Page'
+    id: 0
+  requirements:
+    _permission: 'access content'
